@@ -1,0 +1,13 @@
+@keyframes blinker {
+  0% {opacity: 1;}
+  50% {opacity: 0.2;}
+  100% {opacity: 1;}
+}
+
+.typewriter {
+  &::after {
+    content: "|";
+    font-weight: normal;
+    animation: blinker 1s infinite;
+  }
+}
